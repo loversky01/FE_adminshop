@@ -2,19 +2,33 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin | TTSV</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin | Chi tiết đơn hàng</title>
+
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
-    <!-- Ionicons -->
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+    <style>
+        #banner {
+            width: 200px;
+            height: 80px;
+        }
+
+        img {
+            vertical-align: middle;
+            border-style: none;
+        }
+
+        #hinhanh {
+            width: 120px;
+            height: 80px;
+        }
+    </style>
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -89,7 +103,7 @@
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                         data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
-                 with font-awesome or any other icon font library -->
+                     with font-awesome or any other icon font library -->
                         <li class="nav-item">
                             <a href="../index.html" class="nav-link">
                                 <i class="nav-icon fas fa-home"></i>
@@ -115,7 +129,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="./themdanhmuc.html" class="nav-link">
+                                    <a href="../danhmuc/themdanhmuc.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Thêm mới</p>
                                     </a>
@@ -208,7 +222,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="./info/info.html" class="nav-link">
                                 <i class="nav-icon fas fa-info"></i>
                                 <p>
                                     Thông tin sinh viên
@@ -227,137 +241,171 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-
+                            <h1>Chi tiết hóa đơn</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
-                                <li class="breadcrumb-item active">Danh mục</li>
-                                <li class="breadcrumb-item active">Thêm danh mục</li>
+                                <li class="breadcrumb-item active">CTHĐ</li>
                             </ol>
                         </div>
                     </div>
                 </div><!-- /.container-fluid -->
             </section>
 
-            <!-- Main content -->
             <section class="content">
                 <div class="container-fluid">
-                    <!-- left column -->
-
-                    <!-- general form elements -->
-                    <div class="card card-primary">
-                        <div class="card-header">
-                            <h3 class="card-title">Sửa danh mục sản phẩm</h3>
-                        </div>
-                        <!-- /.card-header -->
-                        <!-- form start -->
-                        <form>
-                            <div class="card-body">
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">ID Danh mục</label>
-                                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputPassword1">Tên danh mục</label>
-                                    <input type="text" class="form-control" id="exampleInputPassword1">
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputFile">Hình ảnh</label>
-                                    <div class="input-group">
-                                        <div class="custom-file">
-                                            <input type="file" class="custom-file-input" id="exampleInputFile">
-                                            <label class="custom-file-label" for="exampleInputFile">Chọn ảnh</label>
-                                        </div>
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">Upload</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputFile">Banner</label>
-                                    <div class="input-group">
-                                        <div class="custom-file">
-                                            <input type="file" class="custom-file-input" id="exampleInputFile">
-                                            <label class="custom-file-label" for="exampleInputFile">Chọn banner</label>
-                                        </div>
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">Upload</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleInputFile">Trạng thái</label>
-                                    <div
-                                        class="custom-control custom-switch custom-switch-off-danger custom-switch-on-success">
-                                        <input type="checkbox" class="custom-control-input" id="customSwitch3">
-
-                                        <label class="custom-control-label" for="customSwitch3"></label>
-                                    </div>
-                                </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="callout callout-info">
+                                <h5><i class="fas fa-info"></i> Ghi chú:</h5>
+                                Thông tin trên website được tập hợp từ các báo cáo, thông báo của các đơn vị phát hành hoá đơn, biên lai (NNT và cơ quan Thuế) theo quy định tại Nghị định số 51/2010/NĐ-CP của Chính phủ và thông tư 153/2010/TT-BTC của Bộ Tài chính, Thông tư 303/2016/TT-BTC của Bộ Tài chính.
                             </div>
-                            <!-- /.card-body -->
 
-                            <div class="card-footer">
+
+                            <!-- Main content -->
+                            <div class="invoice p-3 mb-3">
+                                <!-- title row -->
                                 <div class="row">
-                                    <div class="col-md-10 offset-md-1">
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <button type="button"
-                                                    class="btn btn-block bg-gradient-primary">Lưu</button>
+                                    <div class="col-12">
+                                        <h4>
+                                            <i class="fas fa-globe"></i> Điện máy Vương Cường
+                                            <small class="float-right">Ngày giao dịch: 2/10/2022</small>
+                                        </h4>
+                                    </div>
+                                    <!-- /.col -->
+                                </div>
+                                <!-- info row -->
+                                <div class="row invoice-info">
+                                    <div class="col-sm-4 invoice-col">
+                    
+                                        <address>
+                                            <strong>THÔNG TIN KHÁCH HÀNG</strong><br>
+                                            <b>Tên khách hàng: </b> Trần Đình Minh Vương<br>
+                                            <b>Địa chỉ: </b>San Francisco, CA 94107<br>
+                                            <b>Sô điện thoại: </b> (804) 123-5432<br>
+                                    
+                                        </address>
+                                    </div>
+                                    <!-- /.col -->
+                                  
+                                    <!-- /.col -->
+                                    <div class="col-sm-4 invoice-col">
+                                        <b>ID đơn hàng:</b> 4F3S8J<br>
+                                        <b>Ngày giao hàng:</b> 2/22/2022<br>
+                                        <b>Ngày nhận hàng:</b> 2/22/2022<br>
+                                        <b>Trạng thái:</b> Đã xử lý<br>
+                                    </div>
+                                    <div class="col-sm-4 invoice-col">
+                                        <b>Cập nhật trạng thái đơn hàng:</b>
+                                        <form action="" method="post" class="form-inline" style="margin:2px 0px;">
+                                            <div class="form-group">
+                                                <select name="trangthai" id="" class="form-control" style="width:150px;font-size: 12px;">
+                                                    <option value="1">Chưa xử lý</option>
+                                                    <option value="2">Đã xử lý</option>
+                                                    <option value="3">Đang giao hàng</option>
+                                                    <option value="4">Đã hoàn thành</option>
+                                                    <option value="0">Hủy đơn</option>
+                                                </select>
+                                                
                                             </div>
-                                            <div class="col-3">
-                                                <button type="button" class="btn btn-block btn-secondary">Hủy</button>
-                                            </div>
+
+                                            <button type="submit" class="btn btn-primary" style="font-size: 12px;margin-left: 5px;">Cập nhật</button>
+                                        </form>
+                                    </div>
+                                    <!-- /.col -->
+                                </div>
+                                <!-- /.row -->
+
+                                <!-- Table row -->
+                                <div class="row">
+                                    <div class="col-12 table-responsive">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>STT</th>
+                                                    <th>Tên sản phẩm</th>
+                                                    <th>Ảnh sản phẩm</th>
+                                                    <th>Giá</th>
+                                                    <th>Số lượng</th>
+                                                    <th>Thành tiền</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Asus ZenBook 14 Q407iq</td>
+                                                    <td><img src="./images/dell.png" alt="" id="hinhanh"></td>
+                                                    <td>$64.50</td>
+                                                    <td>6</td>
+                                                    <th>19990000</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Asus ZenBook 14 Q407iq</td>
+                                                    <td><img src="./images/dell.png" alt="" id="hinhanh"></td>
+                                                    <td>$64.50</td>
+                                                    <td>6</td>
+                                                    <th>19990000</th>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- /.col -->
+                                </div>
+                                <!-- /.row -->
+
+                                    <!-- /.col -->
+                                    <div class="col-6">
+                                        <div class="table-responsive">
+                                            <table class="table">
+                                                <tr>
+                                                    <th>Tổng:</th>
+                                                    <td><strong>$265.24</strong></td>
+                                                </tr>
+                                            </table>
                                         </div>
+                                    </div>
+                                    <!-- /.col -->
+                                </div>
+                                <!-- /.row -->
+                               
+                                <!-- this row will not appear when printing -->
+                                <div class="row no-print">
+                                    <div class="col-12">
+                                        <a href="#" rel="noopener" target="_blank"
+                                            class="btn btn-default"><i class="fas fa-print"></i> Xuất hóa đơn</a>
                                     </div>
                                 </div>
                             </div>
-                        </form>
-                    </div>
-                    <!-- /.card -->
-                </div>
-                <!--/.col (right) -->
+                            <!-- /.invoice -->
+                        </div><!-- /.col -->
+                    </div><!-- /.row -->
+                </div><!-- /.container-fluid -->
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+            <strong>Copyright &copy; 2022 <a href="#">Trần Đình Minh Vương D14CNPM6</a>.</strong>
+        </footer>
 
-                <!-- /.row -->
-        </div><!-- /.container-fluid -->
-        </section>
-        <!-- /.content -->
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+        <!-- /.control-sidebar -->
     </div>
-    <!-- =========================================================== -->
+    <!-- ./wrapper -->
 
-    <a id="back-to-top" href="#" class="btn btn-primary back-to-top" role="button" aria-label="Scroll to top">
-        <i class="fas fa-chevron-up"></i>
-    </a>
-    </div>
-    <!-- /.content-wrapper -->
-
-    <footer class="main-footer">
-        <strong>Copyright &copy; 2022 <a href="#">Trần Đình Minh Vương D14CNPM6</a>.</strong>
-    </footer>
-
-    <!-- Control Sidebar -->
-    <aside class="control-sidebar control-sidebar-dark">
-        <!-- Control sidebar content goes here -->
-    </aside>
-    <!-- /.control-sidebar -->
-    </div>
     <!-- jQuery -->
     <script src="../plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
     <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- bs-custom-file-input -->
-    <script src="../plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
     <!-- AdminLTE App -->
     <script src="../dist/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
-
-    <!-- Page specific script -->
-    <script>
-        $(function () {
-            bsCustomFileInput.init();
-        });
-    </script>
+    <!-- <script src="../dist/js/demo.js"></script> -->
 </body>
 
 </html>

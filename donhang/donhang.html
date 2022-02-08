@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin | Khách hàng</title>
+    <title>Admin | Đơn hàng</title>
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -149,7 +149,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="./khachhang.html" class="nav-link">
+                            <a href="../khachhang/khachhang.html" class="nav-link">
                                 <i class="nav-icon fas fa-users"></i>
                                 <p>
                                     Khách hàng
@@ -167,7 +167,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="../donhang/donhang.html" class="nav-link">
+                            <a href="./donhang.html" class="nav-link">
                                 <i class="nav-icon fas fa-book"></i>
                                 <p>
                                     Đơn hàng
@@ -231,7 +231,7 @@
                     <div class="row mb-2">
 
                         <div class="col-sm-6">
-                            <h1>Quản lý danh mục sản phẩm</h1>
+                            <h1>Quản lý đơn hàng</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
@@ -271,11 +271,13 @@
                                         <table id="example2" class="table table-bordered table-hover">
                                             <thead>
                                                 <tr>
-                                                    <th>Mã khách hàng</th>
+                                                    <th>Mã hóa đơn</th>
                                                     <th>Tên khách hàng</th>
-                                                    <th>Số điện thoại</th>
-                                                    <th>Password</th>
                                                     <th>Địa chỉ</th>
+                                                    <th>Số điện thoại</th>
+                                                    <th>Ngày đặt</th>      
+                                                    <th>Ngày nhận</th>
+                                                    <th>Trạng thái</th>
                                                     <th>Thao tác</th>
                                                 </tr>
                                             </thead>
@@ -284,61 +286,114 @@
                                                 <tr>
                                                     <td>0001</td>
                                                     <td>Vương Không Phải Minh</td>
-                                                    <td>0973199905</td>
-                                                    <td>vuongnotminh</td>
+                                                    <td>Nam Định</td>
+                                                    <td>0125333355</td>
                                                     <td>
-                                                        Nam Định
+                                                       20-10-2022
                                                     </td>
+                                                    <td>10-11-2022</td>
+                                                    <td><span class="badge bg-primary">Đã xử lý</span></td>
                                                     <td class="project-actions text-right">
-                                                        <a class="btn btn-primary btn-sm" href="#">
+                                                        <a class="btn btn-primary btn-sm" href="./ctdonhang.html">
                                                             <i class="fas fa-folder">
                                                             </i>
-                                                            Xem
+                                                            Chi tiết
                                                         </a>
-                                                        <a class="btn btn-info btn-sm" href="./suadanhmuc.html">
-                                                            <i class="fas fa-pencil-alt">
-                                                            </i>
-                                                            Sửa
-                                                        </a>
-                                                        <a class="btn btn-danger btn-sm" href="#">
-                                                            <i class="fas fa-trash">
-                                                            </i>
-                                                            Xóa
-                                                        </a>
+                                                        <a class="btn btn-app">
+                                                            <i class="fas fa-save"></i> PDF
+                                                          </a>
                                                     </td>
                                                 </tr>
                                                 <tr>
                                                     <td>002</td>
                                                     <td>Nguyễn Quang Cường</td>
-                                                    <td>0015555</td>
-                                                    <td>cuongkocuong</td>
-                                                    <td>Hà Nôị</td>
+                                                    <td>Nam Định</td>
+                                                    <td>0155333666</td>
+                                                    <td>21-11-2022</td>
+                                                    <td>21-12-2022</td>
+                                                    <td><span class="badge bg-danger">Chưa xử lý</span></td>
                                                     <td class="project-actions text-right">
                                                         <a class="btn btn-primary btn-sm" href="#">
                                                             <i class="fas fa-folder">
                                                             </i>
-                                                            Xem
+                                                            Chi tíêt
                                                         </a>
-                                                        <a class="btn btn-info btn-sm" href="./suadanhmuc.html">
-                                                            <i class="fas fa-pencil-alt">
+                                                        <a class="btn btn-app">
+                                                            <i class="fas fa-save"></i> PDF
+                                                          </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>003</td>
+                                                    <td>Nguyễn Quang Vinh</td>
+                                                    <td>Hà Nội</td>
+                                                    <td>0155333666</td>
+                                                    <td>21-11-2022</td>
+                                                    <td>21-12-2022</td>
+                                                    <td><span class="badge bg-warning">Đang giao hàng</span></td>
+                                                    <td class="project-actions text-right">
+                                                        <a class="btn btn-primary btn-sm" href="#">
+                                                            <i class="fas fa-folder">
                                                             </i>
-                                                            Sửả
+                                                            Chi tíêt
                                                         </a>
-                                                        <a class="btn btn-danger btn-sm" href="#">
-                                                            <i class="fas fa-trash">
+                                                        <a class="btn btn-app">
+                                                            <i class="fas fa-save"></i> PDF
+                                                          </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00022221</td>
+                                                    <td>Vương Minh</td>
+                                                    <td>Nam Định</td>
+                                                    <td>0125333355</td>
+                                                    <td>
+                                                       20-10-2022
+                                                    </td>
+                                                    <td>10-11-2022</td>
+                                                    <td><span class="badge bg-success">Đã giao hàng</span></td>
+                                                    <td class="project-actions text-right">
+                                                        <a class="btn btn-primary btn-sm" href="#">
+                                                            <i class="fas fa-folder">
                                                             </i>
-                                                            Xóa
+                                                            Chi tiết
                                                         </a>
+                                                        <a class="btn btn-app">
+                                                            <i class="fas fa-save"></i> PDF
+                                                          </a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>00022221</td>
+                                                    <td>Vương Minh</td>
+                                                    <td>Nam Định</td>
+                                                    <td>0125333355</td>
+                                                    <td>
+                                                       20-10-2022
+                                                    </td>
+                                                    <td>10-11-2022</td>
+                                                    <td><span style="color:black">Hủy đơn</span></td>
+                                                    <td class="project-actions text-right">
+                                                        <a class="btn btn-primary btn-sm" href="#">
+                                                            <i class="fas fa-folder">
+                                                            </i>
+                                                            Chi tiết
+                                                        </a>
+                                                        <a class="btn btn-app">
+                                                            <i class="fas fa-save"></i> PDF
+                                                          </a>
                                                     </td>
                                                 </tr>
                                             </tbody>
                                             <tfoot>
                                                 <tr>
-                                                    <th>Mã khách hàng</th>
+                                                    <th>Mã hóa đơn</th>
                                                     <th>Tên khách hàng</th>
-                                                    <th>Số điện thoại</th>
-                                                    <th>Password</th>
                                                     <th>Địa chỉ</th>
+                                                    <th>Số điện thoại</th>
+                                                    <th>Ngày đặt</th>      
+                                                    <th>Ngày nhận</th>
+                                                    <th>Trạng thái</th>
                                                     <th>Thao tác</th>
                                                 </tr>
                                             </tfoot>
