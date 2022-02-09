@@ -97,13 +97,12 @@
                         </div>
                     </div>
                 </div>
-
                 <!-- Sidebar Menu -->
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                         data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
-                     with font-awesome or any other icon font library -->
+     with font-awesome or any other icon font library -->
                         <li class="nav-item">
                             <a href="../index.html" class="nav-link">
                                 <i class="nav-icon fas fa-home"></i>
@@ -147,13 +146,13 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="../index.html" class="nav-link">
+                                    <a href="../sanpham/sanpham.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Hiện thị tất cả</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="../index2.html" class="nav-link">
+                                    <a href="../sanpham/themsanpham.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Thêm mới</p>
                                     </a>
@@ -171,7 +170,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="../lienhe/lienhe.html" class="nav-link">
                                 <i class="nav-icon fas fa-phone"></i>
                                 <p>
                                     Liên hệ
@@ -189,12 +188,27 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="" class="nav-link">
                                 <i class="nav-icon fas fa-comment"></i>
                                 <p>
-                                    Bài đăng - Bình luận
+                                    Đánh giá & bình luận
+                                    <i class="right fas fa-angle-left"></i>
                                 </p>
                             </a>
+                            <ul class="nav nav-treeview">
+                                <li class="nav-item">
+                                    <a href="../cmt/cmt.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Bình luận</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../cmt/danhgia.html" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Đánh giá</p>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
 
                         <li class="nav-item">
@@ -207,13 +221,13 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="../index.html" class="nav-link">
+                                    <a href="../admin/admin.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Hiện thị tất cả</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="../index2.html" class="nav-link">
+                                    <a href="../admin/themadmin.html" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Thêm mới</p>
                                     </a>
@@ -222,7 +236,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="./info/info.html" class="nav-link">
+                            <a href="../info/info.html" class="nav-link">
                                 <i class="nav-icon fas fa-info"></i>
                                 <p>
                                     Thông tin sinh viên
@@ -259,7 +273,10 @@
                         <div class="col-12">
                             <div class="callout callout-info">
                                 <h5><i class="fas fa-info"></i> Ghi chú:</h5>
-                                Thông tin trên website được tập hợp từ các báo cáo, thông báo của các đơn vị phát hành hoá đơn, biên lai (NNT và cơ quan Thuế) theo quy định tại Nghị định số 51/2010/NĐ-CP của Chính phủ và thông tư 153/2010/TT-BTC của Bộ Tài chính, Thông tư 303/2016/TT-BTC của Bộ Tài chính.
+                                Thông tin trên website được tập hợp từ các báo cáo, thông báo của các đơn vị phát hành
+                                hoá đơn, biên lai (NNT và cơ quan Thuế) theo quy định tại Nghị định số 51/2010/NĐ-CP của
+                                Chính phủ và thông tư 153/2010/TT-BTC của Bộ Tài chính, Thông tư 303/2016/TT-BTC của Bộ
+                                Tài chính.
                             </div>
 
 
@@ -278,17 +295,17 @@
                                 <!-- info row -->
                                 <div class="row invoice-info">
                                     <div class="col-sm-4 invoice-col">
-                    
+
                                         <address>
                                             <strong>THÔNG TIN KHÁCH HÀNG</strong><br>
                                             <b>Tên khách hàng: </b> Trần Đình Minh Vương<br>
                                             <b>Địa chỉ: </b>San Francisco, CA 94107<br>
                                             <b>Sô điện thoại: </b> (804) 123-5432<br>
-                                    
+
                                         </address>
                                     </div>
                                     <!-- /.col -->
-                                  
+
                                     <!-- /.col -->
                                     <div class="col-sm-4 invoice-col">
                                         <b>ID đơn hàng:</b> 4F3S8J<br>
@@ -300,17 +317,19 @@
                                         <b>Cập nhật trạng thái đơn hàng:</b>
                                         <form action="" method="post" class="form-inline" style="margin:2px 0px;">
                                             <div class="form-group">
-                                                <select name="trangthai" id="" class="form-control" style="width:150px;font-size: 12px;">
+                                                <select name="trangthai" id="" class="form-control"
+                                                    style="width:150px;font-size: 12px;">
                                                     <option value="1">Chưa xử lý</option>
                                                     <option value="2">Đã xử lý</option>
                                                     <option value="3">Đang giao hàng</option>
                                                     <option value="4">Đã hoàn thành</option>
                                                     <option value="0">Hủy đơn</option>
                                                 </select>
-                                                
+
                                             </div>
 
-                                            <button type="submit" class="btn btn-primary" style="font-size: 12px;margin-left: 5px;">Cập nhật</button>
+                                            <button type="submit" class="btn btn-primary"
+                                                style="font-size: 12px;margin-left: 5px;">Cập nhật</button>
                                         </form>
                                     </div>
                                     <!-- /.col -->
@@ -355,46 +374,46 @@
                                 </div>
                                 <!-- /.row -->
 
-                                    <!-- /.col -->
-                                    <div class="col-6">
-                                        <div class="table-responsive">
-                                            <table class="table">
-                                                <tr>
-                                                    <th>Tổng:</th>
-                                                    <td><strong>$265.24</strong></td>
-                                                </tr>
-                                            </table>
-                                        </div>
+                                <!-- /.col -->
+                                <div class="col-6">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <tr>
+                                                <th>Tổng:</th>
+                                                <td><strong>$265.24</strong></td>
+                                            </tr>
+                                        </table>
                                     </div>
-                                    <!-- /.col -->
                                 </div>
-                                <!-- /.row -->
-                               
-                                <!-- this row will not appear when printing -->
-                                <div class="row no-print">
-                                    <div class="col-12">
-                                        <a href="#" rel="noopener" target="_blank"
-                                            class="btn btn-default"><i class="fas fa-print"></i> Xuất hóa đơn</a>
-                                    </div>
+                                <!-- /.col -->
+                            </div>
+                            <!-- /.row -->
+
+                            <!-- this row will not appear when printing -->
+                            <div class="row no-print">
+                                <div class="col-12">
+                                    <a href="#" rel="noopener" target="_blank" class="btn btn-default"><i
+                                            class="fas fa-print"></i> Xuất hóa đơn</a>
                                 </div>
                             </div>
-                            <!-- /.invoice -->
-                        </div><!-- /.col -->
-                    </div><!-- /.row -->
-                </div><!-- /.container-fluid -->
-            </section>
-            <!-- /.content -->
-        </div>
-        <!-- /.content-wrapper -->
-        <footer class="main-footer">
-            <strong>Copyright &copy; 2022 <a href="#">Trần Đình Minh Vương D14CNPM6</a>.</strong>
-        </footer>
+                        </div>
+                        <!-- /.invoice -->
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+        <strong>Copyright &copy; 2022 <a href="#">Trần Đình Minh Vương D14CNPM6</a>.</strong>
+    </footer>
 
-        <!-- Control Sidebar -->
-        <aside class="control-sidebar control-sidebar-dark">
-            <!-- Control sidebar content goes here -->
-        </aside>
-        <!-- /.control-sidebar -->
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
     </div>
     <!-- ./wrapper -->
 
